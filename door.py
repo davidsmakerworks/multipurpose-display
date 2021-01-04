@@ -121,10 +121,10 @@ class Door:
 
     def __init__(
             self, index: int, height: int, width: int, activity: str,
-            props: DoorProperties, is_selected: Optional[bool] = False,
-            is_open: Optional[bool] = False,
-            is_revealed: Optional[bool] = False,
-            is_hidden: Optional[bool] = False) -> None:
+            props: DoorProperties, is_selected: bool = False,
+            is_open: bool = False,
+            is_revealed: bool = False,
+            is_hidden: bool = False) -> None:
         self.index = index
         self.height = height
         self.width = width

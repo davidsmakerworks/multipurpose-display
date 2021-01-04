@@ -68,7 +68,7 @@ class MediaPlayer:
     """
     def __init__(
             self, surface: pygame.Surface, config: dict,
-            surface_is_display: Optional[bool] = True) -> None:
+            surface_is_display: bool = True) -> None:
         self._surface = surface
         self._config = config
         self._surface_is_display = surface_is_display

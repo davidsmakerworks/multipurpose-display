@@ -50,7 +50,7 @@ class Screen:
     """
     def __init__(
             self, width: int, height: int, bg_color: pygame.Color,
-            fullscreen: Optional[bool] = False) -> None:
+            fullscreen: bool = False) -> None:
         self.width = width
         self.height = height
 
