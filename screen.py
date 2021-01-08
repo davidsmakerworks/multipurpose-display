@@ -30,8 +30,6 @@ https://github.com/davidsmakerworks/activity-board
 """
 
 
-from typing import Optional
-
 import pygame
 
 
