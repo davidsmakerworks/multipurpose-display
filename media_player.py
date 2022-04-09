@@ -86,9 +86,9 @@ class MediaPlayer:
 
         if config['announcements']['source'].lower() == 'mongodb':
             self._use_mongo_db = True
-            self._mongo_db_conn_string = os.environ[config['announcements']['db_var']]
-            self._mongo_db_name = config['announcements']['db_name']
-            self._mongo_db_collection = config['announcements']['db_collection']
+            self._mongo_db_conn_string = os.environ[config['announcements']['db_conn_string']]
+            self._mongo_db_name = os.environ[config['announcements']['db_name']]
+            self._mongo_db_collection = os.environ[config['announcements']['db_collection']]
         else:
             self._use_mongo_db = False
             self._announcement_file = config['announcements']['file']
